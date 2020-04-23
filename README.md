@@ -12,7 +12,7 @@ sudo apt-get install ros-kinetic-web-video-server
 ```
 then clone this repo
 ```bash
-git clone https://github.com/bhctsntrk/TurtleBotWebControl
+git clone https://github.com/tehnanmanna/Delivery_Robot_Platform.git
 ```
 
 ## Usage with turtlebot3 simulation

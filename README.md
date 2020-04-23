@@ -1,4 +1,4 @@
-ROS Web Control for Turtlebot3 
+Delivery Robot Platform 
 ======================
 
 You can use this code with every other ROS robot.You only need to change topic namespaces in index.html file. 
@@ -28,8 +28,6 @@ rosrun robot_pose_publisher robot_pose_publisher
 ```
 then open index.html with your browser and control your robot.
 
-I use a lot of javascript code which ones you can found in "rosjsScripts" directory are from robot web tools
-http://robotwebtools.org/tools.html
 
 
 

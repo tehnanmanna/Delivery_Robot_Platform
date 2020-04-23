@@ -1,0 +1,240 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin:0;
+  background-color:#000000;
+}
+.AnkUniLogo img {
+  position:absolute;
+  top:16px;
+  right:500px;
+  width: 140px;
+  height: 130px;
+  background: #000000;
+}
+.YazgitLogo img {
+  position:absolute;
+  top:16px;
+  right:650px;
+  width: 130px;
+  height: 130px;
+  background: #000000;
+}
+.ROSLogo img {
+  position:fixed;
+  top:16px;
+  right:790px;
+  width: 160px;
+  height: 130px;
+  background: #000000;
+}
+.LeftButton{
+  position:absolute;
+  top:19px;
+  right:84px;
+  width:50px;
+  height:111px;
+  display:block;
+  bottom:0px;
+  left:0px;
+  color:#09ff00;
+  font-family:Courier New, Courier, monospace;
+  background-color:#000000;
+  border:5px groove #11da00;
+  font-weight:900;
+}
+.DownButton{
+  float:none;
+  position:absolute;
+  top:73px;
+  bottom:0px;
+  left:52px;
+  right:0px;
+  width:62px;
+  height:56px;
+  font-family:Courier New, Courier, monospace;
+  color:#09ff00;
+  background-color:#000000;
+  border:5px groove #11da00;
+  font-weight:900;
+}
+.UpButton{
+  flex-direction:row;
+  justify-content:flex-start;
+  align-items:center;
+  align-self:auto;
+  left:52px;
+  right:0px;
+  position:absolute;
+  width:62px;
+  height:52px;
+  top:21px;
+  color:#09ff00;
+  font-family:Courier New, Courier, monospace;
+  background-color:#000000;
+  border:5px groove #11da00;
+  line-height:0px;
+  font-weight:900;
+}
+.MoveButtonsForm{
+  position:static;
+}
+.RightButton{
+  left:116px;
+  right:0px;
+  position:absolute;
+  top:20px;
+  width:49px;
+  height:109px;
+  color:#09ff00;
+  font-family:Courier New, Courier, monospace;
+  text-align:left;
+  opacity:1;
+  background-color:#000000;
+  border:5px groove #11da00;
+  font-weight:900;
+  letter-spacing:-1px;
+  text-decoration:none;
+  font-size:12px;
+}
+.OpenMessage{
+  font-family:Courier New, Courier, monospace;
+  color:#09ff00;
+  position:absolute;
+  float:none;
+  top:2px;
+}
+.feedbackText{
+  position:absolute;
+  top:147px;
+  font-weight:900;
+  color:#09ff00;
+  font-family:Courier New, Courier, monospace;
+}
+.PoseY{
+  position:absolute;
+  left:171px;
+  top:46px;
+  color:#09ff00;
+  font-family:Courier New, Courier, monospace;
+  font-weight:900;
+}
+.PoseX{
+  position:absolute;
+  left:171px;
+  top:26px;
+  color:#09ff00;
+  font-weight:900;
+  font-family:Courier New, Courier, monospace;
+}
+.PoseTheta{
+  position:absolute;
+  top:66px;
+  left:171px;
+  color:#09ff00;
+  font-family:Courier New, Courier, monospace;
+  font-weight:900;
+}
+.PoseLinVel{
+  position:absolute;
+  top:85px;
+  left:171px;
+  color:#09ff00;
+  font-family:Courier New, Courier, monospace;
+  font-weight:900;
+}
+.PoseAngVel{
+  position:absolute;
+  top:105px;
+  left:171px;
+  font-family:Courier New, Courier, monospace;
+  font-weight:900;
+  color:#09ff00;
+}
+
+.MoveBaseStatusText{
+  position:absolute;
+  top:145px;
+  font-weight:900;
+  color:#09ff00;
+  font-family:Courier New, Courier, monospace;
+}
+
+.Nav2dmapText{
+  position:absolute;
+  left:1px;
+  top:180px;
+  color:#09ff00;
+  font-weight:900;
+  font-family:Courier New, Courier, monospace;
+}
+
+.CamText{
+  position:absolute;
+  left:510px;
+  top:180px;
+  color:#09ff00;
+  font-weight:900;
+  font-family:Courier New, Courier, monospace;
+}
+.nav2dmapCanvas {
+  position:absolute;
+  background-color:#09ff00;
+  top:200px;
+  left:1px;
+}
+.camCanvas {
+  position:absolute;
+  background-color:#09ff00;
+  top:200px;
+  left:510px;
+}
+.MapButtonsForm{
+  position:fixed;
+  top:20px;
+  right:450px;
+}
+.MapPanButton{
+  position:absolute;
+  top:235px;
+  width:50px;
+  height:50px;
+  display:block;
+  bottom:0px;
+  left:-10px;
+  color:#09ff00;
+  font-family:Courier New, Courier, monospace;
+  background-color:#000000;
+  border:5px groove #11da00;
+  font-weight:900;
+}
+.MapZoomButton{
+  position:absolute;
+  top:180px;
+  width:50px;
+  height:50px;
+  display:block;
+  bottom:0px;
+  left:-10px;
+  color:#09ff00;
+  font-family:Courier New, Courier, monospace;
+  background-color:#000000;
+  border:5px groove #11da00;
+  font-weight:900;
+}
+.CancelGoalButton{
+  position:absolute;
+  top:290px;
+  width:80px;
+  height:50px;
+  display:block;
+  bottom:0px;
+  left:-10px;
+  color:#09ff00;
+  font-family:Courier New, Courier, monospace;
+  background-color:#000000;
+  border:5px groove #11da00;
+  font-weight:900;
+}
+

@@ -143,12 +143,12 @@ else{
                             });
                             //This lines pull data from subscribed topic odom
                             odomTopic.subscribe(function(message) {
-                               // var poseX = document.getElementById('poseX');
-                               // poseX.innerHTML = "X = " + message.pose.pose.position.x
+                                var poseX = document.getElementById("locat");
+                                poseX.innerHTML = "X = " + message.pose.pose.position.x+" Y = " + message.pose.pose.position.y
                                // var poseY = document.getElementById('poseY');
                                // poseY.innerHTML = "Y = " + message.pose.pose.position.y
-                               // var poseTheta = document.getElementById('poseTheta');
-                               // poseTheta.innerHTML = "Theta = " + message.pose.pose.orientation.w
+                                var poseTheta = document.getElementById('rot');
+                               poseTheta.innerHTML = " Theta = " + message.pose.pose.orientation.w + " LinVel = " + message.twist.twist.linear.x + " AngVel = " + message.twist.twist.angular.z
                                //var poseLinVel = document.getElementById('poseLinVel');
                                //poseLinVel.innerHTML = "LinVel = " + message.twist.twist.linear.x
                                //var poseAngVel = document.getElementById('poseAngVel');
@@ -165,8 +165,8 @@ else{
 				var goalflag;
                             //This lines pull data from subscribed topic moveBase/Status
                             moveBaseStatusTopic.subscribe(function(message) {
-                                //movebaseStatus = document.getElementById('goalx');
-                                //movebaseStatus.innerHTML = "Status: " + message.status_list[0].text
+                                movebaseStatus = document.getElementById("robotstatus");
+                                movebaseStatus.innerHTML = "Status: " + message.status_list[0].text
 				//goalflag = true;
 
 				//while(goalflag)
@@ -269,6 +269,7 @@ else{
                     <div style="left: 595;" class="Nav2dmapText" id = "goalx">2D Map and Control Window</div>
                     <div class="CamText">RGB Camera</div>
                     <div class="nav2dmapCanvas" id="nav2dmap"></div>
+		    
                     <div class="camCanvas" id="mjpeg"></div>
                     <form style="position: absolute;" id="c1111">
                         <div class="MapButtonsForm">
@@ -290,6 +291,7 @@ type="button"="Up" onclick="MapPanFunc()">Zoom Out</button>
 
 
                     <img style="width: 626px; height: 80px; position: relative; top: 0px; left: 198px;" src="logo-white.png" alt="roubot">
+
                     <div style="top: 80px; position: relative;  left: 165px;    display: inline-grid;">
                         <p style="color: white;    display: contents;    font-size: 25px;    margin-bottom: 20px;    padding-left: 20px;">-- Collect from -- </p>
                         <select id="TargetLocations" name="target" style="    width: 166px; height: 35px; margin-left: 5px; border-radius: 11px;">
@@ -325,5 +327,8 @@ type="button"="Up" onclick="MapPanFunc()">Zoom Out</button>
                         <div class="MoveBaseStatusText" id="movebaseStatus">Status:</div>
                     </div>
                 </div>
+			<div id="robotstatus" style="color: white;margin-top: 28%; margin-left: 30%;"></div>
+			<div id="locat" style="color: white;margin-top: 1%; margin-left: 30%;"></div>
+			<div id="rot" style="color: white;margin-top: 1%; margin-left: 30%;"></div>
             </body>
             <html>
